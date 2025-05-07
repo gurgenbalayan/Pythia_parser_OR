@@ -1,18 +1,14 @@
 import re
 from typing import List, Optional
 
-import aiohttp
-from selenium.webdriver import Keys
+
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from utils.logger import setup_logger
 import os
 from bs4 import BeautifulSoup
-from selenium.common import WebDriverException, TimeoutException
-import undetected_chromedriver as uc
 from selenium import webdriver
-from fake_useragent import UserAgent
 
 
 SELENIUM_REMOTE_URL = os.getenv("SELENIUM_REMOTE_URL")
